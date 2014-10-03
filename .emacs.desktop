@@ -1,0 +1,1932 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Jul  7 08:29:27 2014
+;; Desktop file format version 206
+;; Emacs version 24.3.1
+
+;; Global section:
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("desktop" "location" "groups" "left" "groups" "cream" "color-" "cream" "blue" "bei" "beige" "color-beige" "color-background" "listing--event" "event" "listing-event"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs" "~/proj/WorkingBee/app/models/project.rb" "~/proj/WorkingBee/app/views/comments/" "~/proj/WorkingBee/app/views/comments/_show.slim" "~/proj/WorkingBee/app/views/comments/_list.slim" "~/proj/WorkingBee/app/views/comments/_show.slim" "~/proj/WorkingBee/app/views/comments/" "~/proj/WorkingBee/app/views/comments" "~/proj/WorkingBee/app/views/comments/_comment.slim" "~/proj/WorkingBee/app/views/projects/" "~/proj/WorkingBee/app/views/projects/_comment.slim" "~/proj/WorkingBee/app/models/group.rb" "~/proj/WorkingBee/db/seeds.rb" "~/proj/WorkingBee/db/schema.rb" "~/proj/WorkingBee/app/views/projects/_list.html.slim" "~/proj/WorkingBee/app/views/groups/_list.slim" "~/proj/WorkingBee/app/views/projects/index.html.slim" "~/proj/WorkingBee/app/views/groups/index.slim" "~/proj/WorkingBee/app/views/projects/show.html.slim" "~/proj/WorkingBee/app/views/users/show.html.slim" "~/proj/WorkingBee/app/assets/stylesheets/components/profile.css.scss" "~/proj/WorkingBee/config/routes.rb" "~/proj/WorkingBee/app/views/groups/show.slim" "~/proj/WorkingBee/app/views/projects/show.html.slim" "~/proj/WorkingBee/app/views/groups/" "~/proj/WorkingBee/app/views/groups/index.slim" "~/proj/WorkingBee/app/views/groups/_list.slim" "~/proj/WorkingBee/app/views/groups/" "~/proj/WorkingBee/app/views/groups/show.slim" "~/proj/WorkingBee/app/controllers/groups_controller.rb"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/tim/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(linum-mode)
+  217
+  '(217 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/views/comments/_list.slim"
+  "_list.slim<2>"
+  'package-menu-mode
+  '(linum-mode)
+  216
+  '(151 nil)
+  t
+  nil
+  '((buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/bootstrap.js"
+  "bootstrap.js"
+  'js-mode
+  '(linum-mode)
+  1253
+  '(3404 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/models/project.rb"
+  "project.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1049
+  '(36 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/models/group.rb"
+  "group.rb<2>"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  610
+  '(615 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "comments"
+  'dired-mode
+  '(linum-mode)
+  190
+  '(1 nil)
+  t
+  '("/Users/tim/proj/WorkingBee/app/views/comments/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/views/projects/show.html.slim"
+  "show.html.slim"
+  'slim-mode
+  '(linum-mode)
+  4519
+  '(4154 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/views/groups/show.slim"
+  "show.slim"
+  'slim-mode
+  '(linum-mode)
+  2705
+  '(2950 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "views<2>"
+  'dired-mode
+  '(linum-mode)
+  231
+  '(nil nil)
+  t
+  '("/Users/tim/proj/WorkingBee/app/views/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "projects"
+  'dired-mode
+  '(linum-mode)
+  194
+  '(503 nil)
+  t
+  '("/Users/tim/proj/WorkingBee/app/views/projects/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/views/projects/_list.html.slim"
+  "_list.html.slim"
+  'slim-mode
+  '(linum-mode)
+  406
+  '(333 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/db/seeds.rb"
+  "seeds.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1826
+  '(1322 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/views/groups/_list.slim"
+  "_list.slim"
+  'slim-mode
+  '(linum-mode)
+  738
+  '(361 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/db/schema.rb"
+  "schema.rb<2>"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  8017
+  '(13618 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/views/projects/index.html.slim"
+  "index.html.slim"
+  'slim-mode
+  '(linum-mode)
+  213
+  '(833 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/views/groups/index.slim"
+  "index.slim"
+  'slim-mode
+  '(linum-mode)
+  285
+  '(401 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/stylesheets/components/profile.css.scss"
+  "profile.css.scss"
+  'scss-mode
+  '(linum-mode)
+  221
+  '(308 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/views/users/show.html.slim"
+  "show.html.slim<2>"
+  'slim-mode
+  '(linum-mode)
+  394
+  '(53 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/config/routes.rb"
+  "routes.rb<2>"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  841
+  '(841 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/controllers/groups_controller.rb"
+  "groups_controller.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  69
+  '(96 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/controllers/projects_controller.rb"
+  "projects_controller.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1336
+  '(1308 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/views/projects/_form.slim"
+  "_form.slim"
+  'slim-mode
+  '(linum-mode)
+  1137
+  '(1857 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/views/projects/edit.slim"
+  "edit.slim"
+  'slim-mode
+  '(linum-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/javascripts/tabs.js.coffee"
+  "tabs.js.coffee"
+  'coffee-mode
+  '(linum-mode)
+  964
+  '(702 nil)
+  nil
+  nil
+  '((tab-width . 2) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "javascripts"
+  'dired-mode
+  '(linum-mode)
+  528
+  '(nil nil)
+  t
+  '("/Users/tim/proj/WorkingBee/app/assets/javascripts/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/stylesheets/components/stat-block.css.scss"
+  "stat-block.css.scss"
+  'css-mode
+  '(linum-mode)
+  937
+  '(68 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/views/layouts/application.html.slim"
+  "application.html.slim"
+  'slim-mode
+  '(linum-mode)
+  385
+  '(1093 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/stylesheets/global-variables.css.scss"
+  "global-variables.css.scss"
+  'css-mode
+  '(linum-mode)
+  863
+  '(926 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/stylesheets/components/listing.css.scss"
+  "listing.css.scss"
+  'css-mode
+  '(linum-mode)
+  1195
+  '(924 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/stylesheets/components/index.css.scss"
+  "index.css.scss"
+  'css-mode
+  '(linum-mode)
+  478
+  '(53 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/stylesheets/components/file-drop.css.scss"
+  "file-drop.css.scss"
+  'css-mode
+  '(linum-mode)
+  367
+  '(68 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/stylesheets/components/listing-group.css.scss"
+  "listing-group.css.scss"
+  'css-mode
+  '(linum-mode)
+  241
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/stylesheets/application.css.scss"
+  "application.css.scss"
+  'css-mode
+  '(linum-mode)
+  1818
+  '(648 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/models/user.rb"
+  "user.rb<2>"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1974
+  '(394 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "models"
+  'dired-mode
+  '(linum-mode)
+  1738
+  '(1940 nil)
+  t
+  '("/Users/tim/proj/WorkingBee/app/models/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "user"
+  'dired-mode
+  '(linum-mode)
+  190
+  '(nil nil)
+  t
+  '("/Users/tim/proj/WorkingBee/app/models/user/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/javascripts/welcome.js.coffee"
+  "welcome.js.coffee"
+  'coffee-mode
+  '(linum-mode)
+  715
+  '(498 nil)
+  nil
+  nil
+  '((tab-width . 2) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/javascripts/welcome.js"
+  "welcome.js"
+  'js-mode
+  '(linum-mode)
+  1729
+  '(46 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/stylesheets/components/buttons.css.scss"
+  "buttons.css.scss"
+  'css-mode
+  '(linum-mode)
+  468
+  '(468 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/shift.rb"
+  "shift.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  794
+  '(507 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/Gemfile"
+  "Gemfile"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  685
+  '(836 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/position.rb"
+  "position.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  39
+  '(39 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/Gemfile"
+  "Gemfile<2>"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  32
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "project_categories"
+  'dired-mode
+  '(linum-mode)
+  244
+  '(nil nil)
+  t
+  '("/Users/tim/proj/WorkingBee/lib/project_categories/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "lib"
+  'dired-mode
+  '(linum-mode)
+  278
+  '(nil nil)
+  t
+  '("/Users/tim/proj/WorkingBee/lib/")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "event_category.rb"
+  'dired-mode
+  '(linum-mode)
+  109
+  '(nil nil)
+  t
+  '("/Users/tim/proj/wbw/app/models/event_category.rb")
+  nil)
+
+(desktop-create-buffer 206
+  nil
+  "builders"
+  'dired-mode
+  '(linum-mode)
+  231
+  '(nil nil)
+  t
+  '("/Users/tim/proj/wbw/lib/builders/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/lib/builders/event_categories_builder.rb"
+  "event_categories_builder.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/controllers/users_controller_spec.rb"
+  "users_controller_spec.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  86
+  '(86 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/integration/user_sign_in_spec.rb"
+  "user_sign_in_spec.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  723
+  '(518 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/config/initializers/warden.rb"
+  "warden.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  192
+  '(60 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "controllers"
+  'dired-mode
+  '(linum-mode)
+  317
+  '(317 nil)
+  t
+  '("/Users/tim/proj/WorkingBee/spec/controllers/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/integration/projects_spec.rb"
+  "projects_spec.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1655
+  '(1963 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/rails_helper.rb"
+  "rails_helper.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  907
+  '(907 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/support/integration_helper.rb"
+  "integration_helper.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/spec_helper.rb"
+  "spec_helper.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  3
+  '(3 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/helpers/users_helper_spec.rb"
+  "users_helper_spec.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/controllers/users/registrations_controller.rb"
+  "registrations_controller.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  486
+  '(187 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/controllers/users/omniauth_callbacks_controller.rb"
+  "omniauth_callbacks_controller.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  357
+  '(253 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/controllers/application_controller.rb"
+  "application_controller.rb<2>"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  205
+  '(205 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/controllers/users_controller.rb"
+  "users_controller.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  185
+  '(432 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/event_location_test.rb"
+  "event_location_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  2992
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/models/project_spec.rb"
+  "project_spec.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1070
+  '(1129 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/models/user_spec.rb"
+  "user_spec.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  798
+  '(1484 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/models/identity.rb"
+  "identity.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  249
+  '(255 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/models/identity/common.rb"
+  "common.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  192
+  '(136 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "identity"
+  'dired-mode
+  '(linum-mode)
+  244
+  '(nil nil)
+  t
+  '("/Users/tim/proj/WorkingBee/app/models/identity/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/assets/javascripts/users.js.coffee"
+  "users.js.coffee"
+  'coffee-mode
+  '(linum-mode)
+  212
+  '(496 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/models/supporter.rb"
+  "supporter.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  129
+  '(129 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/models/supporter_spec.rb"
+  "supporter_spec.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/event.rb"
+  "event.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  569
+  '(628 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/factories/projects.rb"
+  "projects.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  434
+  '(590 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/functional/positions_test.rb"
+  "positions_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1350
+  '(2033 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/stylesheets/mixins.css.scss"
+  "mixins.css.scss"
+  'css-mode
+  '(linum-mode)
+  679
+  '(910 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/stylesheets/components/form-elements/striped-control-group.css.scss"
+  "striped-control-group.css.scss"
+  'css-mode
+  '(linum-mode)
+  899
+  '(203 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/unit/event_test.rb"
+  "event_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  882
+  '(881 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/db/migrate/20140627040127_add_fields_to_users.rb"
+  "20140627040127_add_fields_to_users.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  195
+  '(127 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/db/migrate/20140627040135_create_groups.rb"
+  "20140627040135_create_groups.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  325
+  '(287 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/spec/factories/users.rb"
+  "users.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  564
+  '(498 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/app/models/authorization.rb"
+  "authorization.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/config/environments/development.rb"
+  "development.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1309
+  '(1309 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/WorkingBee/config/database.yml.example"
+  "database.yml.example"
+  'fundamental-mode
+  '(linum-mode)
+  2493
+  '(1475 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/stylesheets/patterns/layout.css.scss"
+  "layout.css.scss"
+  'css-mode
+  '(linum-mode)
+  277
+  '(277 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/stylesheets/patterns/utilities.css.scss"
+  "utilities.css.scss"
+  'css-mode
+  '(linum-mode)
+  1052
+  '(1838 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/templates/Event/EventCreateTemplate.js.mahtml"
+  "EventCreateTemplate.js.mahtml"
+  'web-mode
+  '(linum-mode)
+  1818
+  '(1806 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/templates/LocationFormTemplate.js.mahtml"
+  "LocationFormTemplate.js.mahtml"
+  'web-mode
+  '(linum-mode)
+  387
+  '(387 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/LocationFormView.js"
+  "LocationFormView.js"
+  'js-mode
+  '(linum-mode)
+  4054
+  '(4054 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/unit/position_test.rb"
+  "position_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  963
+  '(963 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/Event/EventPositionsListEntryView.js"
+  "EventPositionsListEntryView.js"
+  'js-mode
+  '(linum-mode)
+  1061
+  '(1459 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/stylesheets/components/header.css.scss"
+  "header.css.scss"
+  'css-mode
+  '(linum-mode)
+  878
+  '(2483 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/config/initializers/omniauth.rb"
+  "omniauth.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/models/EventPositionShiftModel.js"
+  "EventPositionShiftModel.js"
+  'js-mode
+  '(linum-mode)
+  930
+  '(1802 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/models/EventPositionModel.js"
+  "EventPositionModel.js"
+  'js-mode
+  '(linum-mode)
+  483
+  '(1336 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/Event/EventFormPositionsListEntryView.js"
+  "EventFormPositionsListEntryView.js"
+  'js-mode
+  '(linum-mode)
+  773
+  '(3095 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/templates/Event/EventPositionsListEntryTemplate.js.mahtml"
+  "EventPositionsListEntryTemplate.js.mahtml"
+  'web-mode
+  '(linum-mode)
+  284
+  '(162 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/templates/Event/EventPositionShiftsListEntryTemplate.js.mahtml"
+  "EventPositionShiftsListEntryTemplate.js.mahtml"
+  'web-mode
+  '(linum-mode)
+  178
+  '(171 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/Event/EventPositionShiftsListEntryView.js"
+  "EventPositionShiftsListEntryView.js"
+  'js-mode
+  '(linum-mode)
+  647
+  '(1247 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/api_resources/v1_1.rb"
+  "v1_1.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  6811
+  '(6806 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/Event/EventPositionShiftsListView.js"
+  "EventPositionShiftsListView.js"
+  'js-mode
+  '(linum-mode)
+  510
+  '(475 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/Event/EventPositionsListView.js"
+  "EventPositionsListView.js"
+  'js-mode
+  '(linum-mode)
+  174
+  '(174 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/controllers/events_controller.rb"
+  "events_controller.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  944
+  '(1188 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/Event/EventDetailsView.js"
+  "EventDetailsView.js"
+  'js-mode
+  '(linum-mode)
+  4651
+  '(4646 t)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/templates/Event/EventFormPositionShiftsListEntryTemplate.js.mahtml"
+  "EventFormPositionShiftsListEntryTemplate.js.mahtml"
+  'web-mode
+  '(linum-mode)
+  329
+  '(2 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/Event/EventFormPositionShiftsListEntryView.js"
+  "EventFormPositionShiftsListEntryView.js"
+  'js-mode
+  '(linum-mode)
+  277
+  '(277 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/templates/Event/EventFormPositionsListEntryTemplate.js.mahtml"
+  "EventFormPositionsListEntryTemplate.js.mahtml"
+  'web-mode
+  '(linum-mode)
+  761
+  '(2 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/webapp_manifest.js"
+  "webapp_manifest.js"
+  'js-mode
+  '(linum-mode)
+  3530
+  '(3541 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/controllers/Event/EventPositionShiftsListEntryController.js"
+  "EventPositionShiftsListEntryController.js"
+  'js-mode
+  '(linum-mode)
+  803
+  '(803 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/repositories/EventPositionShiftRepository.js"
+  "EventPositionShiftRepository.js"
+  'js-mode
+  '(linum-mode)
+  261
+  '(436 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/models/EventPositionsModel.js"
+  "EventPositionsModel.js"
+  'js-mode
+  '(linum-mode)
+  364
+  '(364 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/lib/subject_object_join/acts_as.rb"
+  "acts_as.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  687
+  '(435 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/functional/user_shifts_controller_test.rb"
+  "user_shifts_controller_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  717
+  '(1396 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/user_shift.rb"
+  "user_shift.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  91
+  '(258 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/controllers/user_shifts_controller.rb"
+  "user_shifts_controller.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  276
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "migrate"
+  'dired-mode
+  '(linum-mode)
+  10902
+  '(234 nil)
+  t
+  '("/Users/tim/proj/wbw/db/migrate/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/unit/shift_test.rb"
+  "shift_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  442
+  '(442 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/factories/events.rb"
+  "events.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1464
+  '(3716 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/user.rb"
+  "user.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  9904
+  '(6530 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/unit/user_test.rb"
+  "user_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  8588
+  '(8638 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/views/positions/_show_info.json.rabl"
+  "_show_info.json.rabl"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  159
+  '(159 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/helpers/json_pattern_helper.rb"
+  "json_pattern_helper.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  781
+  '(497 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/decorators/event_decorator.rb"
+  "event_decorator.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  760
+  '(760 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/decorators/events_decorator.rb"
+  "events_decorator.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/views/shifts/_show_info.json.rabl"
+  "_show_info.json.rabl<2>"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  53
+  '(130 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/decorators/shift_decorator.rb"
+  "shift_decorator.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  154
+  '(235 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/decorators/position_decorator.rb"
+  "position_decorator.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  202
+  '(232 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/config/routes.rb"
+  "routes.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  6743
+  '(6636 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/views/user_shifts/destroy.json.rabl"
+  "destroy.json.rabl"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1
+  '(74 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/lib/subject_object_join/join.rb"
+  "join.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  594
+  '(1311 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/controllers/user_shift_applications_controller.rb"
+  "user_shift_applications_controller.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  260
+  '(325 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/views/user_shift_applications/create.json.rabl"
+  "create.json.rabl<2>"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  39
+  '(39 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "views"
+  'dired-mode
+  '(linum-mode)
+  3509
+  '(2820 nil)
+  t
+  '("/Users/tim/proj/wbw/app/views/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/functional/user_shift_applications_controller_test.rb"
+  "user_shift_applications_controller_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  993
+  '(2099 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/plugins/maria-ObjectList.js"
+  "maria-ObjectList.js"
+  'js-mode
+  '(linum-mode)
+  7251
+  '(7424 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/factories/shifts.rb"
+  "shifts.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  151
+  '(112 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/api_resources/v1_0.rb"
+  "v1_0.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1274
+  '(21 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/controllers/Event/EventFormPositionShiftsListEntryController.js"
+  "EventFormPositionShiftsListEntryController.js"
+  'js-mode
+  '(linum-mode)
+  348
+  '(348 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/event_create_positions_test.rb"
+  "event_create_positions_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  375
+  '(309 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/Event/EventFormView.js"
+  "EventFormView.js"
+  'js-mode
+  '(linum-mode)
+  7487
+  '(7983 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/ValidationView.js"
+  "ValidationView.js"
+  'js-mode
+  '(linum-mode)
+  1505
+  '(1769 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/messages_test.rb"
+  "messages_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  11703
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/controllers/Event/EventFormPositionsListEntryController.js"
+  "EventFormPositionsListEntryController.js"
+  'js-mode
+  '(linum-mode)
+  749
+  '(966 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/factories/joined_events.rb"
+  "joined_events.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  129
+  '(129 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/factories/positions.rb"
+  "positions.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  480
+  '(171 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "Event"
+  'dired-mode
+  '(linum-mode)
+  1183
+  '(442 nil)
+  t
+  '("/Users/tim/proj/wbw/app/assets/javascripts/app/templates/Event/")
+  nil)
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/buzz_test.rb"
+  "buzz_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  2688
+  '(732 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/helpers/navigation_helper.rb"
+  "navigation_helper.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  10564
+  '(13111 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/helpers/action_helper.rb"
+  "action_helper.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  258
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/event_edit_positions_test.rb"
+  "event_edit_positions_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  899
+  '(476 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/event_show_positions_test.rb"
+  "event_show_positions_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1206
+  '(420 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/FormInputView.js"
+  "FormInputView.js"
+  'js-mode
+  '(linum-mode)
+  1946
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/event_edit_test.rb"
+  "event_edit_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  3883
+  '(4415 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/controllers/application_controller.rb"
+  "application_controller.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1088
+  '(1277 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/group_role.rb"
+  "group_role.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  394
+  '(394 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/factories/group_roles.rb"
+  "group_roles.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  258
+  '(127 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/db/schema.rb"
+  "schema.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  8286
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/functional/groups_controller_test.rb"
+  "groups_controller_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  695
+  '(5713 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/event_role.rb"
+  "event_role.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/functional/events_controller_test.rb"
+  "events_controller_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  11893
+  '(6984 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/functional/user_events_controller_test.rb"
+  "user_events_controller_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1980
+  '(2477 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/group.rb"
+  "group.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  12617
+  '(3130 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/admin/event_administration_test.rb"
+  "event_administration_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1332
+  '(177 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/lib/sql_union.rb"
+  "sql_union.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  266
+  '(48 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/user_applying_to_shifts_test.rb"
+  "user_applying_to_shifts_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1196
+  '(1254 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/config/initializers/extensions.rb"
+  "extensions.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  73
+  '(73 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/controllers/user_events_controller.rb"
+  "user_events_controller.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  662
+  '(1 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/lib/subject_object_join.rb"
+  "subject_object_join.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  135
+  '(135 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/views/joined_events/destroy.json.rabl"
+  "destroy.json.rabl<2>"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  89
+  '(89 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/joined_group.rb"
+  "joined_group.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  185
+  '(207 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/models/group_joined_event.rb"
+  "group_joined_event.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/controllers/joined_groups_controller.rb"
+  "joined_groups_controller.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  611
+  '(1283 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/functional/joined_groups_controller_test.rb"
+  "joined_groups_controller_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  1264
+  '(2217 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/models/EventModel.js"
+  "EventModel.js"
+  'js-mode
+  '(linum-mode)
+  13405
+  '(1636 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/app/assets/javascripts/app/views/Event/EventView.js"
+  "EventView.js"
+  'js-mode
+  '(linum-mode)
+  2874
+  '(2277 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/tim/proj/wbw/test/integration/user_registration_test.rb"
+  "user_registration_test.rb"
+  'ruby-mode
+  '(linum-mode inf-ruby-minor-mode)
+  2122
+  '(1914 nil)
+  nil
+  nil
+  '((indent-tabs-mode) (buffer-file-coding-system . undecided-unix)))
+
