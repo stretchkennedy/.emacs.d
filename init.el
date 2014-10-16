@@ -1,3 +1,17 @@
+;; window size
+(defun set-frame-size-according-to-resolution ()
+  (interactive)
+  (if window-system
+      (progn
+        (if (> (x-display-pixel-width) 1280)
+          (add-to-list 'default-frame-alist (cons 'width 279))
+          (add-to-list 'default-frame-alist (cons 'width 80)))
+        (add-to-list 'default-frame-alist
+                     (cons 'height (/ (x-display-pixel-height)
+                                      (frame-char-height)))))))
+
+(set-frame-size-according-to-resolution)
+
 ;; dired
 (setq ls-lisp-use-insert-directory-program t)
 (setq insert-directory-program "gls")
@@ -19,6 +33,9 @@
 ;; line numbers
 ;; (require 'nlinum)
 (global-linum-mode 1)
+
+;; line highlighting
+(global-hl-line-mode 1)
 
 ;; auto-complete
 ;;(require 'auto-complete-config)
