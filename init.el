@@ -19,10 +19,8 @@
 
 ;; windmove/framemove
 (require 'framemove)
-(global-set-key [(shift meta up)]    'fm-up-frame)                           ; `M-S-up'
-(global-set-key [(shift meta down)]  'fm-down-frame)                         ; `M-S-down'
-(global-set-key [(shift meta left)]  'fm-left-frame)                         ; `M-S-left'
-(global-set-key [(shift meta right)] 'fm-right-frame)                        ; `M-S-right'
+(windmove-default-keybindings 'super)
+(setq framemove-hook-into-windmove t)
 
 ;; robe
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate) (rvm-activate-corresponding-ruby))
