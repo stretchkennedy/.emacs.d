@@ -1,3 +1,8 @@
+;; MELPA
+(require 'package)
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
 ;; window size
 (defun set-frame-size-according-to-resolution ()
   (interactive)
@@ -12,6 +17,17 @@
 
 (set-frame-size-according-to-resolution)
 
+;; windmove/framemove
+(require 'framemove)
+(global-set-key [(shift meta up)]    'fm-up-frame)                           ; `M-S-up'
+(global-set-key [(shift meta down)]  'fm-down-frame)                         ; `M-S-down'
+(global-set-key [(shift meta left)]  'fm-left-frame)                         ; `M-S-left'
+(global-set-key [(shift meta right)] 'fm-right-frame)                        ; `M-S-right'
+
+;; robe
+(defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate) (rvm-activate-corresponding-ruby))
+(add-hook 'robe-mode-hook 'ac-robe-setup)
+
 ;; dired
 (setq ls-lisp-use-insert-directory-program t)
 (setq insert-directory-program "gls")
@@ -22,10 +38,9 @@
 
 (add-to-list 'load-path "~/.emacs.d/")
 
-;; MELPA
-(require 'package)
-(add-to-list 'package-archives
-  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;; $PATH and friends
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
 
 ;; indentation
 (setq-default indent-tabs-mode nil)
@@ -38,9 +53,9 @@
 (global-hl-line-mode 1)
 
 ;; auto-complete
-;;(require 'auto-complete-config)
-;;(ac-config-default)
-;;(setq ac-delay 2)
+(require 'auto-complete-config)
+(ac-config-default)
+(setq ac-delay 2)
 
 ;; trailing whitespace
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -54,6 +69,8 @@
 (rvm-use-default)
 
 ;; ruby-mode
+(add-hook 'ruby-mode-hook 'robe-mode)
+
 (add-hook 'ruby-mode-hook
 	  (lambda ()
 	    (define-key ruby-mode-map "\C-c#" 'comment-or-uncomment-region)))
