@@ -224,6 +224,9 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; font
+(set-face-attribute 'default t :font "Inconsolata 14")
+
 ;; theme
 (load-theme 'solarized-dark)
 
