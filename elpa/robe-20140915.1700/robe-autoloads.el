@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (ac-robe-setup ac-robe-available) "ac-robe" "ac-robe.el"
-;;;;;;  (21582 54754 0 0))
+;;;;;;  (21585 41406 0 0))
 ;;; Generated autoloads from ac-robe.el
 
 (autoload 'ac-robe-available "ac-robe" "\
@@ -23,7 +23,7 @@ Return t if `robe-mode' completions are available, otherwise nil.
 ;;;***
 
 ;;;### (autoloads (company-robe) "company-robe" "company-robe.el"
-;;;;;;  (21582 54754 0 0))
+;;;;;;  (21585 41406 0 0))
 ;;; Generated autoloads from company-robe.el
 
 (autoload 'company-robe "company-robe" "\
@@ -33,7 +33,7 @@ A `company-mode' completion back-end for `robe-mode'.
 
 ;;;***
 
-;;;### (autoloads (robe-mode) "robe" "robe.el" (21582 54753 0 0))
+;;;### (autoloads (robe-mode) "robe" "robe.el" (21585 41406 0 0))
 ;;; Generated autoloads from robe.el
 
 (autoload 'robe-mode "robe" "\
@@ -47,7 +47,7 @@ The following commands are available:
 
 ;;;***
 
-;;;### (autoloads nil nil ("robe-pkg.el") (21582 54754 256025 0))
+;;;### (autoloads nil nil ("robe-pkg.el") (21585 41406 517331 0))
 
 ;;;***
 

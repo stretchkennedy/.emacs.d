@@ -1,7 +1,14 @@
+;; scrollbars (leave this before window config)
+(dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
+  (when (fboundp mode) (funcall mode -1)))
+
 ;; MELPA
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+(setq package-enable-at-startup nil)
+(package-initialize)
 
 ;; window size
 (defun set-frame-size-according-to-resolution ()
@@ -31,10 +38,10 @@
 (setq insert-directory-program "gls")
 
 ;; search path
-(let ((default-directory "~/.emacs.d/"))
+(let ((default-directory "~/.emacs.d/manual"))
   (normal-top-level-add-subdirs-to-load-path))
 
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/manual")
 
 ;; $PATH and friends
 (when (memq window-system '(mac ns))
@@ -43,6 +50,9 @@
 ;; indentation
 (setq-default indent-tabs-mode nil)
 
+;; tab width
+(setq-default tab-width 4)
+
 ;; line numbers
 ;; (require 'nlinum)
 (global-linum-mode 1)
@@ -50,10 +60,18 @@
 ;; line highlighting
 (global-hl-line-mode 1)
 
+;; replace yes confirmation with y and no confirmation with n
+(defalias 'yes-or-no-p 'y-or-n-p)
+
 ;; auto-complete
 (require 'auto-complete-config)
 (ac-config-default)
 (setq ac-delay 2)
+
+;; ido (interactive file completion)
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
 
 ;; trailing whitespace
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
@@ -89,7 +107,15 @@
 (setq scss-compile-at-save nil)
 
 ;; coffee-mode
-(custom-set-variables '(coffee-tab-width 2))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(coffee-tab-width 2)
+ '(custom-safe-themes
+   (quote
+    ("9dae95cdbed1505d45322ef8b5aa90ccb6cb59e0ff26fef0b8f411dfc416c552" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default))))
 
 ;; slim-mode
 (setq slim-indent-offset 2)
@@ -186,3 +212,20 @@
 ;    (set-window-buffer (selected-window)
 ;                       (get-buffer my-speedbar-buffer-name)))
 (put 'upcase-region 'disabled nil)
+
+;; w3m
+(setq browse-url-browser-function 'w3m-browse-url)
+(autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t)
+(setq w3m-use-cookies t)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+;; theme
+(load-theme 'solarized-dark)
+
+;; fullscreen
+(global-set-key (kbd "C-<f11>") 'toggle-frame-fullscreen)
