@@ -26,8 +26,13 @@
 
 ;; windmove/framemove
 (require 'framemove)
-(windmove-default-keybindings 'super)
+(if (eq system-type 'darwin)
+    (windmove-default-keybindings 'super)
+  (windmove-default-keybindings 'ctrl))
+
 (setq framemove-hook-into-windmove t)
+
+
 
 ;; robe
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate) (rvm-activate-corresponding-ruby))
@@ -225,10 +230,11 @@
  )
 
 ;; font
-(set-face-attribute 'default t :font "Inconsolata 14")
+(set-face-attribute 'default t :font "Inconsolata 12")
 
 ;; theme
 (load-theme 'solarized-dark)
 
 ;; fullscreen
-(global-set-key (kbd "C-<f11>") 'toggle-frame-fullscreen)
+(if (memq window-system '(mac ns))
+    (global-set-key (kbd "C-<f11>") 'toggle-frame-fullscreen))
