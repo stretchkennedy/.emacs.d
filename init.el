@@ -88,6 +88,10 @@
 (require 'custom-git-grep)
 (global-set-key (kbd "M-g f") 'git-grep)
 
+;; magit
+(require 'magit)
+(global-set-key (kbd "M-g s") 'magit-status)
+
 ;; RVM
 (require 'rvm)
 (rvm-use-default)
