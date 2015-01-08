@@ -237,7 +237,8 @@
  )
 
 ;; font
-(set-face-attribute 'default t :font "Inconsolata 12")
+(set-face-attribute 'default t :font "Inconsolata")
+(set-face-attribute 'default t :height 140)
 
 ;; theme
 (load-theme 'solarized-dark)
