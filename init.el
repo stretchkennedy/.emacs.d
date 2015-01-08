@@ -91,6 +91,7 @@
 ;; magit
 (require 'magit)
 (global-set-key (kbd "M-g s") 'magit-status)
+(global-set-key (kbd "M-g b") 'magit-blame-mode)
 
 ;; RVM
 (require 'rvm)
