@@ -79,7 +79,13 @@
 ;; ido (interactive file completion)
 (setq ido-enable-flex-matching t)
 (setq ido-everywhere t)
+
 (ido-mode 1)
+
+;; smex (ido for M-x
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; trailing whitespace
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
