@@ -43,7 +43,9 @@
 
 ;; dired
 (setq ls-lisp-use-insert-directory-program t)
-(setq insert-directory-program "gls")
+(if (eq system-type 'darwin)
+    (setq insert-directory-program "gls")
+  (setq insert-directory-program "ls"))
 
 ;; search path
 (let ((default-directory "~/.emacs.d/manual"))
@@ -173,6 +175,9 @@
 	     '(ruby-mode
 	       "\\(def\\|do\\|{\\)" "\\(end\\|end\\|}\\)" "#"
 	       (lambda (arg) (ruby-end-of-block)) nil))
+
+;; js
+(setq js-indent-level 2)
 
 ;; auto-indent
 (electric-indent-mode 1)
