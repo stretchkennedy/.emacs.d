@@ -54,8 +54,7 @@
 (add-to-list 'load-path "~/.emacs.d/manual")
 
 ;; $PATH and friends
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize))
+(exec-path-from-shell-initialize)
 
 ;; indentation
 (setq-default indent-tabs-mode nil)
