@@ -55,6 +55,8 @@
 
 ;; $PATH and friends
 (exec-path-from-shell-initialize)
+(exec-path-from-shell-copy-env "PATH")
+(exec-path-from-shell-copy-env "GOPATH")
 
 ;; indentation
 (setq-default indent-tabs-mode nil)
