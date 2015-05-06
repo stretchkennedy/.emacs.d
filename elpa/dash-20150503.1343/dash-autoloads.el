@@ -1,10 +1,9 @@
-;;; popup-autoloads.el --- automatically extracted autoloads
+;;; dash-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("popup-pkg.el" "popup.el") (21777 56754
-;;;;;;  102295 0))
+;;;### (autoloads nil nil ("dash.el") (21833 45720 27000 0))
 
 ;;;***
 
@@ -13,4 +12,4 @@
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
 ;; End:
-;;; popup-autoloads.el ends here
+;;; dash-autoloads.el ends here
