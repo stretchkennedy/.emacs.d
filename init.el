@@ -251,10 +251,6 @@
  ;; If there is more than one, they won't work right.
  )
 
-;; font
-(set-face-attribute 'default t :font "Inconsolata")
-(set-face-attribute 'default t :height 140)
-
 ;; theme
 (load-theme 'solarized-dark)
 
