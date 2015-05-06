@@ -259,3 +259,4 @@
 ;; fullscreen
 (if (memq window-system '(mac ns))
     (global-set-key (kbd "C-<f11>") 'toggle-frame-fullscreen))
+(put 'downcase-region 'disabled nil)
