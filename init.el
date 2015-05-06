@@ -179,7 +179,8 @@
 
 ;; js
 (setq js-indent-level 2)
-(setq auto-mode-alist (cons '("\\.es6$" . js-mode) auto-mode-alist))
+(add-to-list 'auto-mode-alist '("\\.es6$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 
 ;; auto-indent
 (electric-indent-mode 1)
