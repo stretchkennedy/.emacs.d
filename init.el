@@ -155,6 +155,8 @@
 
 (setq web-mode-markup-indent-offset 2)
 
+
+
 ;;; yasnippet and web-mode are incompatible
 (add-hook 'web-mode-hook (lambda()
                            (setq yas-dont-activate t)))
@@ -178,10 +180,13 @@
 	       "\\(def\\|do\\|{\\)" "\\(end\\|end\\|}\\)" "#"
 	       (lambda (arg) (ruby-end-of-block)) nil))
 
-;; js
-(setq js-indent-level 2)
-(add-to-list 'auto-mode-alist '("\\.es6$" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+;; use jsx mode for all javascript, because whatever
+(add-to-list 'auto-mode-alist '("\\.js$" . jsx-mode))
+(add-to-list 'auto-mode-alist '("\\.es6$" . jsx-mode))
+(custom-set-variables
+ '(jsx-indent-level 2)
+ '(js-indent-level 2))
+
 
 ;; auto-indent
 (electric-indent-mode 1)
