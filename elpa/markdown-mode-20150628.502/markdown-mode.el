@@ -29,7 +29,7 @@
 ;; Maintainer: Jason R. Blevins <jrblevin@sdf.org>
 ;; Created: May 24, 2007
 ;; Version: 2.0
-;; Package-Version: 20150623.1128
+;; Package-Version: 20150628.502
 ;; Keywords: Markdown, GitHub Flavored Markdown, itex
 ;; URL: http://jblevins.org/projects/markdown-mode/
 
@@ -1347,6 +1347,10 @@ on the value of `markdown-wiki-link-alias-first'.")
 
 (defvar markdown-mode-font-lock-keywords-basic
   (list
+   (cons 'markdown-match-gfm-code-blocks '((1 markdown-pre-face)
+                                           (2 markdown-language-keyword-face t t)
+                                           (3 markdown-pre-face)
+                                           (4 markdown-pre-face)))
    (cons 'markdown-match-fenced-code-blocks '((0 markdown-pre-face)))
    (cons 'markdown-match-pre-blocks '((0 markdown-pre-face)))
    (cons markdown-regex-blockquote 'markdown-blockquote-face)
@@ -1930,8 +1934,8 @@ because `thing-at-point-looking-at' does not work reliably with
 (defun markdown-match-gfm-code-blocks (last)
   "Match GFM quoted code blocks from point to LAST."
   (let (open lang body close all)
-    (cond ((and (eq major-mode 'gfm-mode)
-                (search-forward-regexp "^\\(```\\)\\([^[:space:]]+[[:space:]]*\\)?$" last t))
+    (cond ((search-forward-regexp
+            "^\\(```\\)\\([^[:space:]]+[[:space:]]*\\)?$" last t)
            (beginning-of-line)
            (setq open (list (match-beginning 1) (match-end 1))
                  lang (list (match-beginning 2) (match-end 2)))
@@ -4859,10 +4863,6 @@ if ARG is omitted or nil."
   (append
    ;; GFM features to match first
    (list
-    (cons 'markdown-match-gfm-code-blocks '((1 markdown-pre-face)
-                                            (2 markdown-language-keyword-face t t)
-                                            (3 markdown-pre-face)
-                                            (4 markdown-pre-face)))
     (cons markdown-regex-strike-through '(2 markdown-strike-through-face)))
    ;; Basic Markdown features (excluding possibly overridden ones)
    markdown-mode-font-lock-keywords-basic

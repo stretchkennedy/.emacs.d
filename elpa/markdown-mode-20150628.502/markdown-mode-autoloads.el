@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "markdown-mode" "markdown-mode.el" (21899 17539
+;;;### (autoloads nil "markdown-mode" "markdown-mode.el" (21907 15871
 ;;;;;;  0 0))
 ;;; Generated autoloads from markdown-mode.el
 
