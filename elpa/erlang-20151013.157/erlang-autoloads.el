@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "erlang" "erlang.el" (22052 33059 0 0))
+;;;### (autoloads nil "erlang" "erlang.el" (22078 54409 74717 211000))
 ;;; Generated autoloads from erlang.el
 
 (autoload 'erlang-mode "erlang" "\
@@ -118,8 +118,8 @@ editing control characters:
 
 ;;;***
 
-;;;### (autoloads nil "erlang-start" "erlang-start.el" (22052 33058
-;;;;;;  0 0))
+;;;### (autoloads nil "erlang-start" "erlang-start.el" (22078 54409
+;;;;;;  42717 211000))
 ;;; Generated autoloads from erlang-start.el
 
 (let ((a '("\\.erl\\'" . erlang-mode)) (b '("\\.hrl\\'" . erlang-mode))) (or (assoc (car a) auto-mode-alist) (setq auto-mode-alist (cons a auto-mode-alist))) (or (assoc (car b) auto-mode-alist) (setq auto-mode-alist (cons b auto-mode-alist))))
@@ -132,7 +132,7 @@ editing control characters:
 
 ;;;### (autoloads nil nil ("erlang-eunit.el" "erlang-flymake.el"
 ;;;;;;  "erlang-pkg.el" "erlang-skels-old.el" "erlang-skels.el" "erlang_appwiz.el")
-;;;;;;  (22052 33059 154418 0))
+;;;;;;  (22078 54409 116965 236000))
 
 ;;;***
 

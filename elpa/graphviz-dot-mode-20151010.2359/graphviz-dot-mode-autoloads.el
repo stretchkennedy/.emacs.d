@@ -4,7 +4,7 @@
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
 ;;;### (autoloads nil "graphviz-dot-mode" "graphviz-dot-mode.el"
-;;;;;;  (22052 33045 0 0))
+;;;;;;  (22078 54396 578716 960000))
 ;;; Generated autoloads from graphviz-dot-mode.el
 
 (autoload 'graphviz-dot-mode "graphviz-dot-mode" "\
@@ -58,6 +58,11 @@ Turning on Graphviz Dot mode calls the value of the variable
 (add-to-list 'auto-mode-alist '("\\.dot\\'" . graphviz-dot-mode))
 
 (add-to-list 'auto-mode-alist '("\\.gv\\'" . graphviz-dot-mode))
+
+;;;***
+
+;;;### (autoloads nil nil ("graphviz-dot-mode-pkg.el") (22078 54396
+;;;;;;  588543 457000))
 
 ;;;***
 
