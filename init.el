@@ -10,6 +10,9 @@
 (setq package-enable-at-startup nil)
 (package-initialize)
 
+;; store saves somewhere more sensible
+(setq backup-directory-alist `(("." . "~/.saves")))
+
 ;; enable flycheck globally
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
