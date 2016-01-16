@@ -1,3 +1,6 @@
+;;; init.el --- Initialise emacs
+;;; Commentary:
+;;; Code:
 ;; scrollbars (leave this before window config)
 (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
   (when (fboundp mode) (funcall mode -1)))
@@ -15,20 +18,6 @@
 
 ;; enable flycheck globally
 (add-hook 'after-init-hook #'global-flycheck-mode)
-
-;; window size
-(defun set-frame-size-according-to-resolution ()
-  (interactive)
-  (if window-system
-      (progn
-        (if (> (x-display-pixel-width) 1280)
-          (add-to-list 'default-frame-alist (cons 'width 279))
-          (add-to-list 'default-frame-alist (cons 'width 80)))
-        (add-to-list 'default-frame-alist
-                     (cons 'height (/ (x-display-pixel-height)
-                                      (frame-char-height)))))))
-
-(set-frame-size-according-to-resolution)
 
 ;; windmove/framemove
 (require 'framemove)
