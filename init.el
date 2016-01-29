@@ -27,6 +27,8 @@
 
 (setq framemove-hook-into-windmove t)
 
+;; disable annoying bell
+(setq ring-bell-function 'ignore)
 
 
 ;; robe
