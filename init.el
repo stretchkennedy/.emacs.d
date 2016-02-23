@@ -113,7 +113,19 @@
   (interactive
    (if mark-active (list (region-beginning) (region-end))
      (list (line-beginning-position)
-	   (line-beginning-position 2)))))
+           (line-beginning-position 2)))))
+
+;; markdown-mode
+(add-hook
+ 'markdown-mode-hook
+ '(lambda ()
+    (define-key markdown-mode-map (kbd "M-<left>") 'backward-word)
+    (define-key markdown-mode-map (kbd "M-<right>") 'forward-word)
+    (define-key markdown-mode-map (kbd "C-s-<left>") 'markdown-promote)
+    (define-key markdown-mode-map (kbd "C-s-<right>") 'markdown-demote)))
+
+
+
 
 ;; css-mode
 (setq-default css-indent-offset 2)
