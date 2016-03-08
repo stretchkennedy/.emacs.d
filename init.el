@@ -251,17 +251,12 @@
 ;    (set-window-buffer (selected-window)
 ;                       (get-buffer my-speedbar-buffer-name)))
 (put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
 
 ;; w3m
 (setq browse-url-browser-function 'w3m-browse-url)
 (autoload 'w3m-browse-url "w3m" "Ask a WWW browser to show a URL." t)
 (setq w3m-use-cookies t)
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
 
 ;; theme
 (load-theme 'solarized-dark)
@@ -269,4 +264,6 @@
 ;; fullscreen
 (if (memq window-system '(mac ns))
     (global-set-key (kbd "C-<f11>") 'toggle-frame-fullscreen))
-(put 'downcase-region 'disabled nil)
+
+(provide 'init)
+;;; init.el ends here
