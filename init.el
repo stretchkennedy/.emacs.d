@@ -263,7 +263,7 @@
 
 ;; fullscreen
 (if (memq window-system '(mac ns))
-    (global-set-key (kbd "C-<f11>") 'toggle-frame-fullscreen))
+    (global-set-key [(super shift f)] 'toggle-frame-fullscreen))
 
 (provide 'init)
 ;;; init.el ends here
