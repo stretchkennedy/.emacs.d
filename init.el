@@ -247,7 +247,7 @@
 (setq w3m-use-cookies t)
 
 ;; theme
-(load-theme 'solarized-dark t)
+(load-theme 'solarized-dark)
 
 ;; fullscreen
 (if (memq window-system '(mac ns))
