@@ -175,9 +175,9 @@
 	       "\\(def\\|do\\|{\\)" "\\(end\\|end\\|}\\)" "#"
 	       (lambda (arg) (ruby-end-of-block)) nil))
 
-;; use jsx mode for all javascript, because whatever
-(add-to-list 'auto-mode-alist '("\\.js$" . jsx-mode))
-(add-to-list 'auto-mode-alist '("\\.es6$" . jsx-mode))
+;; use js2-jsx-mode for all javascript
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-jsx-mode))
+(add-to-list 'auto-mode-alist '("\\.es6$" . js2-jsx-mode))
 
 
 
