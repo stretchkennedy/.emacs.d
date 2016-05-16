@@ -176,11 +176,18 @@
 	       (lambda (arg) (ruby-end-of-block)) nil))
 
 ;; use js2-jsx-mode for all javascript
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-jsx-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx$" . js2-jsx-mode))
+(add-to-list 'auto-mode-alist '("\\.js[x]?$" . js2-jsx-mode))
 (add-to-list 'auto-mode-alist '("\\.es6$" . js2-jsx-mode))
 
+(setq web-mode-content-types-alist
+      '(("jsx" . "\\.js[x]?\\'")))
 
+(add-hook 'web-mode-hook
+          (lambda ()
+            ;; short circuit js mode and just do everything in jsx-mode
+            (if (equal web-mode-content-type "javascript")
+                (web-mode-set-content-type "jsx")
+              (message "now set to: %s" web-mode-content-type))))
 
 ;; auto-indent
 (electric-indent-mode 1)
@@ -271,7 +278,8 @@
    (quote
     ("708df3cbb25425ccbf077a6e6f014dc3588faba968c90b74097d11177b711ad1" "9dae95cdbed1505d45322ef8b5aa90ccb6cb59e0ff26fef0b8f411dfc416c552" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
  '(js-indent-level 2)
- '(jsx-indent-level 2))
+ '(jsx-indent-level 2)
+ '(js2-basic-offset 2))
 
 ;; finalise
 (provide 'init)
