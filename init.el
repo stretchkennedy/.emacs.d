@@ -260,6 +260,10 @@
 (if (memq window-system '(mac ns))
     (global-set-key [(super shift f)] 'toggle-frame-fullscreen))
 
+(add-hook 'delete-frame-functions ; emacs crashes on OSX when closing a fullscreen frame
+          (lambda (frame)
+            (set-frame-parameter nil 'fullscreen nil)))
+
 ;; Custom's bullshit
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
