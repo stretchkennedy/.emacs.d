@@ -262,7 +262,8 @@
 
 (add-hook 'delete-frame-functions ; emacs crashes on OSX when closing a fullscreen frame
           (lambda (frame)
-            (set-frame-parameter nil 'fullscreen nil)))
+            (set-frame-parameter nil 'fullscreen nil)
+            (other-frame)))
 
 ;; Custom's bullshit
 (custom-set-faces
