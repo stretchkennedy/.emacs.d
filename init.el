@@ -195,6 +195,7 @@
 ;; auto-indent
 (electric-indent-mode 1)
 
+;; better killing
 (dolist (command '(yank yank-pop))
    (eval `(defadvice ,command (after indent-region activate)
             (and (not current-prefix-arg)
@@ -207,6 +208,8 @@
                                       plain-tex-mode))
                  (let ((mark-even-if-inactive transient-mark-mode))
                    (indent-region (region-beginning) (region-end) nil))))))
+
+(setq kill-ring-max 1024) ; 60 is just stupid
 
 (defadvice kill-line (before check-position activate)
   (if (member major-mode
