@@ -65,6 +65,9 @@
 ;; line highlighting
 (global-hl-line-mode 1)
 
+;; undo tree mode (much better than vanilla)
+(global-undo-tree-mode 1)
+
 ;; replace yes confirmation with y and no confirmation with n
 (defalias 'yes-or-no-p 'y-or-n-p)
 
