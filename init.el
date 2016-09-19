@@ -283,6 +283,9 @@
             (set-frame-parameter nil 'fullscreen nil)
             (other-frame)))
 
+;; prompt before quitting
+(setq confirm-kill-emacs 'y-or-n-p)
+
 ;; Custom's bullshit
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
