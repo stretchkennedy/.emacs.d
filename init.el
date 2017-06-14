@@ -40,7 +40,7 @@
 (with-eval-after-load 'flycheck
   (flycheck-add-mode 'javascript-flow 'flow-minor-mode)
   (flycheck-add-mode 'javascript-eslint 'flow-minor-mode)
-  (flycheck-add-next-checker 'javascript-eslint 'javascript-flow))
+  (flycheck-add-next-checker 'javascript-flow 'javascript-eslint))
 
 ;; eslint
 (defun my/use-eslint-from-node-modules ()
