@@ -19,13 +19,36 @@
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
+;; js2
+(setq js2-mode-show-parse-errors nil)
+(setq js2-mode-show-strict-warnings nil)
+
+;; flow
+(defun my/use-flow-from-node-modules ()
+  (let* ((root (locate-dominating-file
+                (or (buffer-file-name) default-directory)
+                "node_modules"))
+         (flow (and root
+                    (expand-file-name "node_modules/flow-bin/cli.js" root))))
+    (when (and flow (file-executable-p flow))
+      (setq-local flycheck-javascript-flow-executable flow))))
+
+(add-hook 'flycheck-mode-hook #'my/use-flow-from-node-modules)
+
+(add-hook 'js2-mode-hook 'flow-minor-enable-automatically)
+(require 'flycheck-flow)
+(with-eval-after-load 'flycheck
+  (flycheck-add-mode 'javascript-flow 'flow-minor-mode)
+  (flycheck-add-mode 'javascript-eslint 'flow-minor-mode)
+  (flycheck-add-next-checker 'javascript-eslint 'javascript-flow))
+
+;; eslint
 (defun my/use-eslint-from-node-modules ()
   (let* ((root (locate-dominating-file
                 (or (buffer-file-name) default-directory)
                 "node_modules"))
          (eslint (and root
-                      (expand-file-name "node_modules/eslint/bin/eslint.js"
-                                        root))))
+                      (expand-file-name "node_modules/eslint/bin/eslint.js" root))))
     (when (and eslint (file-executable-p eslint))
       (setq-local flycheck-javascript-eslint-executable eslint))))
 
@@ -303,10 +326,14 @@
  '(custom-safe-themes
    (quote
     ("708df3cbb25425ccbf077a6e6f014dc3588faba968c90b74097d11177b711ad1" "9dae95cdbed1505d45322ef8b5aa90ccb6cb59e0ff26fef0b8f411dfc416c552" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
+ '(flycheck-javascript-flow-args nil)
  '(js-indent-level 2)
- '(jsx-indent-level 2)
+ '(js2-basic-offset 2)
  '(js2-strict-trailing-comma-warning nil)
- '(js2-basic-offset 2))
+ '(jsx-indent-level 2)
+ '(package-selected-packages
+   (quote
+    (flow-minor-mode zenburn-theme yasnippet yaml-mode web-mode w3m vlf undo-tree transpose-frame toml-mode terraform-mode solarized-theme smex slim-mode scss-mode scala-mode sass-mode rvm robe rinari restclient nlinum markdown-mode+ magit-filenotify jsx-mode json-mode js2-mode jade-mode graphviz-dot-mode goto-chg go-mode go-autocomplete framemove fold-dwim flymake-ruby flymake-json flymake-jshint flymake-cursor flycheck-rust flycheck-flow f exec-path-from-shell erlang elixir-mode dockerfile-mode csv-mode coffee-mode cargo browse-kill-ring 2048-game))))
 
 ;; finalise
 (provide 'init)
