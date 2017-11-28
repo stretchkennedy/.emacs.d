@@ -256,6 +256,12 @@
                  (just-one-space 0)
                  (backward-char 1)))))
 
+;; allow opening a new temporary buffer
+(defun new-temp-buffer ()
+  "Open up a temporary buffer."
+  (interactive)
+  (switch-to-buffer (make-temp-name "scratch")))
+
 ; speedbar
 
 ;(speedbar t)
