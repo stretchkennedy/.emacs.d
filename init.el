@@ -13,6 +13,9 @@
 (setq package-enable-at-startup nil)
 (package-initialize)
 
+;; window splitting
+(setq split-width-threshold 600)
+
 ;; store saves somewhere more sensible
 (setq backup-directory-alist `(("." . "~/.saves")))
 
