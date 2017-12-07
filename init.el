@@ -14,7 +14,7 @@
 (package-initialize)
 
 ;; window splitting
-(setq split-width-threshold 600)
+(setq split-width-threshold 0)
 
 ;; store saves somewhere more sensible
 (setq backup-directory-alist `(("." . "~/.saves")))
