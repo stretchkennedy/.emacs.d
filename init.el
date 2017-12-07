@@ -14,6 +14,7 @@
 (package-initialize)
 
 ;; window splitting
+(setq split-height-threshold nil)
 (setq split-width-threshold 0)
 
 ;; store saves somewhere more sensible
