@@ -27,6 +27,10 @@
 (setq js2-mode-show-parse-errors nil)
 (setq js2-mode-show-strict-warnings nil)
 
+;; rust
+(with-eval-after-load 'rust-mode
+  (add-hook 'flycheck-mode-hook #'flycheck-rust-setup))
+
 ;; flow
 (defun my/use-flow-from-node-modules ()
   (let* ((root (locate-dominating-file
