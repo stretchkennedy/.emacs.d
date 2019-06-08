@@ -376,7 +376,7 @@
  '(jsx-indent-level 2)
  '(package-selected-packages
    (quote
-    (thrift tide lsp-go lsp-html lsp-javascript-flow lsp-javascript-typescript lsp-mode lsp-rust lsp-ui vcl-mode groovy-mode gradle-mode kotlin-mode flow-minor-mode zenburn-theme yasnippet yaml-mode web-mode w3m vlf undo-tree transpose-frame toml-mode terraform-mode solarized-theme smex slim-mode scss-mode scala-mode sass-mode rvm robe rinari restclient nlinum markdown-mode+ magit-filenotify jsx-mode json-mode js2-mode jade-mode graphviz-dot-mode goto-chg go-mode go-autocomplete framemove fold-dwim flymake-ruby flymake-json flymake-jshint flymake-cursor flycheck-rust flycheck-flow f exec-path-from-shell erlang elixir-mode dockerfile-mode csv-mode coffee-mode cargo browse-kill-ring 2048-game)))
+    (protobuf-mode tide lsp-go lsp-html lsp-javascript-flow lsp-javascript-typescript lsp-mode lsp-rust lsp-ui vcl-mode groovy-mode gradle-mode kotlin-mode flow-minor-mode zenburn-theme yasnippet yaml-mode web-mode w3m vlf undo-tree transpose-frame toml-mode terraform-mode solarized-theme smex slim-mode scss-mode scala-mode sass-mode rvm robe rinari restclient nlinum markdown-mode+ magit-filenotify jsx-mode json-mode js2-mode jade-mode graphviz-dot-mode goto-chg go-mode go-autocomplete framemove fold-dwim flymake-ruby flymake-json flymake-jshint flymake-cursor flycheck-rust flycheck-flow f exec-path-from-shell erlang elixir-mode dockerfile-mode csv-mode coffee-mode cargo browse-kill-ring 2048-game)))
  '(web-mode-code-indent-offset 2))
 
 ;; finalise
