@@ -21,7 +21,36 @@
 (setq backup-directory-alist `(("." . "~/.saves")))
 
 ;; flycheck
-(add-hook 'after-init-hook #'global-flycheck-mode)
+(global-flycheck-mode)
+
+;; tide (typescript/tsx/etc.)
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  ;; company is an optional dependency. You have to
+  ;; install it separately via package-install
+  ;; `M-x package-install [ret] company`
+  (company-mode +1))
+
+;; aligns annotation to the right hand side
+(setq company-tooltip-align-annotations t)
+
+;; formats the buffer before saving
+(add-hook 'before-save-hook 'tide-format-before-save)
+
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
+
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
+(add-hook 'web-mode-hook
+          (lambda ()
+            (when (string-equal "tsx" (file-name-extension buffer-file-name))
+              (setup-tide-mode))))
+(flycheck-add-mode 'typescript-tslint 'web-mode)
 
 ;; js2
 (setq js2-mode-show-parse-errors nil)
@@ -347,7 +376,8 @@
  '(jsx-indent-level 2)
  '(package-selected-packages
    (quote
-    (thrift tide lsp-go lsp-html lsp-javascript-flow lsp-javascript-typescript lsp-mode lsp-rust lsp-ui vcl-mode groovy-mode gradle-mode kotlin-mode flow-minor-mode zenburn-theme yasnippet yaml-mode web-mode w3m vlf undo-tree transpose-frame toml-mode terraform-mode solarized-theme smex slim-mode scss-mode scala-mode sass-mode rvm robe rinari restclient nlinum markdown-mode+ magit-filenotify jsx-mode json-mode js2-mode jade-mode graphviz-dot-mode goto-chg go-mode go-autocomplete framemove fold-dwim flymake-ruby flymake-json flymake-jshint flymake-cursor flycheck-rust flycheck-flow f exec-path-from-shell erlang elixir-mode dockerfile-mode csv-mode coffee-mode cargo browse-kill-ring 2048-game))))
+    (thrift tide lsp-go lsp-html lsp-javascript-flow lsp-javascript-typescript lsp-mode lsp-rust lsp-ui vcl-mode groovy-mode gradle-mode kotlin-mode flow-minor-mode zenburn-theme yasnippet yaml-mode web-mode w3m vlf undo-tree transpose-frame toml-mode terraform-mode solarized-theme smex slim-mode scss-mode scala-mode sass-mode rvm robe rinari restclient nlinum markdown-mode+ magit-filenotify jsx-mode json-mode js2-mode jade-mode graphviz-dot-mode goto-chg go-mode go-autocomplete framemove fold-dwim flymake-ruby flymake-json flymake-jshint flymake-cursor flycheck-rust flycheck-flow f exec-path-from-shell erlang elixir-mode dockerfile-mode csv-mode coffee-mode cargo browse-kill-ring 2048-game)))
+ '(web-mode-code-indent-offset 2))
 
 ;; finalise
 (provide 'init)
