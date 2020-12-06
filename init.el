@@ -160,7 +160,10 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; trailing whitespace
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'before-save-hook
+          (lambda ()
+            (unless (derived-mode-p '(markdown-mode))
+              'delete-trailing-whitespace)))
 
 ;; git-grep
 (require 'custom-git-grep)
