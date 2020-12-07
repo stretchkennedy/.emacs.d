@@ -26,6 +26,8 @@
 ;; tide (typescript/tsx/etc.)
 (defun setup-tide-mode ()
   (interactive)
+  (setq typescript-indent-level       2
+        typescript-expr-indent-offset 2)
   (tide-setup)
   (flycheck-mode +1)
   (setq flycheck-check-syntax-automatically '(save mode-enabled))
@@ -48,7 +50,8 @@
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
 (add-hook 'web-mode-hook
           (lambda ()
-            (when (string-equal "tsx" (file-name-extension buffer-file-name))
+            (when (member (file-name-extension buffer-file-name)
+                          '("tsx" "ts"))
               (setup-tide-mode))))
 (flycheck-add-mode 'typescript-tslint 'web-mode)
 
