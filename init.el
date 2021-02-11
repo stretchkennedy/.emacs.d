@@ -373,16 +373,14 @@
  ;; If there is more than one, they won't work right.
  '(coffee-tab-width 2)
  '(custom-safe-themes
-   (quote
-    ("708df3cbb25425ccbf077a6e6f014dc3588faba968c90b74097d11177b711ad1" "9dae95cdbed1505d45322ef8b5aa90ccb6cb59e0ff26fef0b8f411dfc416c552" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default)))
+   '("708df3cbb25425ccbf077a6e6f014dc3588faba968c90b74097d11177b711ad1" "9dae95cdbed1505d45322ef8b5aa90ccb6cb59e0ff26fef0b8f411dfc416c552" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "a8245b7cc985a0610d71f9852e9f2767ad1b852c2bdea6f4aadc12cce9c4d6d0" "d677ef584c6dfc0697901a44b885cc18e206f05114c8a3b7fde674fce6180879" default))
  '(flycheck-javascript-flow-args nil)
  '(js-indent-level 2)
  '(js2-basic-offset 2)
  '(js2-strict-trailing-comma-warning nil)
  '(jsx-indent-level 2)
  '(package-selected-packages
-   (quote
-    (protobuf-mode tide lsp-go lsp-html lsp-javascript-flow lsp-javascript-typescript lsp-mode lsp-rust lsp-ui vcl-mode groovy-mode gradle-mode kotlin-mode flow-minor-mode zenburn-theme yasnippet yaml-mode web-mode w3m vlf undo-tree transpose-frame toml-mode terraform-mode solarized-theme smex slim-mode scss-mode scala-mode sass-mode rvm robe rinari restclient nlinum markdown-mode+ magit-filenotify jsx-mode json-mode js2-mode jade-mode graphviz-dot-mode goto-chg go-mode go-autocomplete framemove fold-dwim flymake-ruby flymake-json flymake-jshint flymake-cursor flycheck-rust flycheck-flow f exec-path-from-shell erlang elixir-mode dockerfile-mode csv-mode coffee-mode cargo browse-kill-ring 2048-game)))
+   '(lsp-go lsp-html lsp-javascript-flow lsp-javascript-typescript lsp-rust vcl-mode gradle-mode undo-tree toml-mode smex slim-mode scss-mode rinari markdown-mode+ magit-filenotify jsx-mode jade-mode go-autocomplete framemove fold-dwim flymake-ruby flymake-json flymake-jshint 2048-game))
  '(web-mode-code-indent-offset 2))
 
 ;; finalise
