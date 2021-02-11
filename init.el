@@ -8,7 +8,7 @@
 ;; MELPA (should be placed before any packages are used)
 (require 'package)
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.milkbox.net/packages/") t)
+	         '("melpa" . "https://melpa.org/packages/") t)
 
 (setq package-enable-at-startup nil)
 (package-initialize)
