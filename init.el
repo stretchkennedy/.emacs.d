@@ -256,9 +256,9 @@
 	       "\\(def\\|do\\|{\\)" "\\(end\\|end\\|}\\)" "#"
 	       (lambda (arg) (ruby-end-of-block)) nil))
 
-;; use js2-jsx-mode for all javascript
-(add-to-list 'auto-mode-alist '("\\.js[x]?$" . js2-jsx-mode))
-(add-to-list 'auto-mode-alist '("\\.es6$" . js2-jsx-mode))
+;; use js-mode for all javascript
+(add-to-list 'auto-mode-alist '("\\.js[x]?$" . js-mode))
+(add-to-list 'auto-mode-alist '("\\.es6$" . js-mode))
 
 (setq web-mode-content-types-alist
       '(("jsx" . "\\.js[x]?\\'")))
